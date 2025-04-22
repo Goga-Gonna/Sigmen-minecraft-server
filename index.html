@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SigmaCommuniteGames</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="banner-content">
+      <h1>SigmaCommuniteGames</h1>
+      <p>IP: Sigmen.aternos.me:58079</p>
+      <button id="copy-ip">Скопировать IP</button>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Главная</a></li>
+      <li><a href="#about">О сервере</a></li>
+      <li><a href="#donate">Донат</a></li>
+      <li><a href="#rules">Правила</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Добро пожаловать на сервер!</h2>
+      <p>Лучший Minecraft сервер с интересными режимами и приятным сообществом.</p>
+    </section>
+
+    <section id="about">
+      <h2>О сервере</h2>
+      <p>Мы предлагаем уникальные режимы игры, стабильную работу и отзывчивую администрацию.</p>
+    </section>
+
+    <section id="donate">
+      <h2>Донат</h2>
+      <div class="donate-cards">
+        <!-- ViP -->
+        <div class="card">
+          <h3>💎 ViP</h3>
+          <p>100₴ — базовые привилегии</p>
+          <form onsubmit="return openPayment('ViP', 'https://pay.easypay.ua/vip-link', 'vip-nick')">
+            <input type="text" id="vip-nick" placeholder="Введите ник" required>
+            <button type="submit">Купить</button>
+          </form>
+        </div>
+
+        <!-- Premium -->
+        <div class="card">
+          <h3>🔥 Premium</h3>
+          <p>250₴ — больше возможностей</p>
+          <form onsubmit="return openPayment('Premium', 'https://pay.easypay.ua/premium-link', 'premium-nick')">
+            <input type="text" id="premium-nick" placeholder="Введите ник" required>
+            <button type="submit">Купить</button>
+          </form>
+        </div>
+
+        <!-- Elite -->
+        <div class="card">
+          <h3>👑 Elite</h3>
+          <p>500₴ — максимальный набор</p>
+          <form onsubmit="return openPayment('Elite', 'https://pay.easypay.ua/elite-link', 'elite-nick')">
+            <input type="text" id="elite-nick" placeholder="Введите ник" required>
+            <button type="submit">Купить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2>Правила</h2>
+      <ul>
+        <li>Запрещено использовать чит-коды и баги. Это нарушает честную игру и может привести к наказаниям.</li>
+        <li>Уважайте других игроков. Не допускаются оскорбления, расизм, сексизм или любые формы дискриминации.</li>
+        <li>Запрещено использование нецензурной лексики. Строго запрещено оскорблять других игроков или администрацию.</li>
+        <li>Не спамьте в чате. Многократные сообщения без смысла или реклама других серверов будет караться предупреждением или баном.</li>
+        <li>Не нарушайте правила экономики. Запрещено мошенничество, использование багов для получения преимущества.</li>
+        <li>Хорошей Игры!!</li>
+      </ul>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <ul>
+        <li>📧 Почта: <a href="mailto:gontarsergei2009@gmail.com">gontarsergei2009@gmail.com</a></li>
+        <li>💬 Telegram: <a href="https://t.me/sigmenminecraft" target="_blank">@Nowsy15</a></li>
+        <li>🎮 Discord: <a href="https://discord.gg/hHUxUw2z" target="_blank">discord.gg/yourserver</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SigmaCommuniteGames. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
