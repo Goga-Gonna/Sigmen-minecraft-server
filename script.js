@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const copyBtn = document.getElementById("copy-ip");
-  const ipText = "Sigmen.aternos.me:58079"; // Замени при необходимости
+  const ipText = "Sigmen.aternos.me:58079";
 
   copyBtn.addEventListener("click", function () {
     navigator.clipboard.writeText(ipText).then(() => {
@@ -13,3 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function redirectToDonate() {
+  window.open("https://sigmen.trademc.org", "_blank");
+}
